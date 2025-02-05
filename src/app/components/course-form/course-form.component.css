@@ -1,12 +1,48 @@
-.post1{
+.container{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px ;
+    height: max-content;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
-.post2{
-    width: 60%;
+.container2{
+    width: 80%;
     padding-top: 40px;
     text-align: center;
+}
+.form_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form_div input{
+    width: 60%;
+}
+.form_div form{
+    width: 90%;
+    margin-bottom: 150px;
+}
+label{
+    font-size: 16px;
+    font-weight: 600;
+}
+input{
+    height: 18px;
+    border: 1.5px solid gray;
+    border-radius: 0;
+    margin-left: 15px;
+    padding: 3px 0px 3px 10px;
+}
+button{
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: white;
+    color: black;
+    margin-left: 5px;
+    height: 27px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid gray ;
+  
 }

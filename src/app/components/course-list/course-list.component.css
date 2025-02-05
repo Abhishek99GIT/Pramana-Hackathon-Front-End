@@ -1,12 +1,15 @@
 .page-number {
-    padding: 5px 10px;
+    padding: 1px 4px;
     border: 1px solid #ccc;
     cursor: pointer;
     margin: 2px;
+    margin-left: 6px;
+  
   }
   .page-number.active {
     background-color: #007bff;
     color: white;
+    font-size: 16px;
   }
   .getonecomp{
     display: flex;
@@ -27,3 +30,50 @@
   table{
     border: 2px solid black;
   }
+
+  .container{
+    width: 100%;
+    height: max-content;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.container2{
+    width: 80%;
+    padding-top: 40px;
+    text-align: center;
+}
+.form_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form_div input{
+    width: 70%;
+}
+.form_div form{
+    width: 80%;
+}
+label{
+    font-size: 16px;
+    font-weight: 600;
+}
+input{
+    height: 18px;
+    border: 1.5px solid gray;
+    border-radius: 0;
+    margin-left: 15px;
+    padding: 3px 0px 3px 10px;
+}
+button{
+    margin-left: 5px;
+    height: 24px;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    border: 1px solid gray ;
+  margin-top: 5px;
+}

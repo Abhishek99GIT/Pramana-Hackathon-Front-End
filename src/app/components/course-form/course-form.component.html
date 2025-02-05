@@ -1,50 +1,53 @@
 
-<div class="post1">
-  <div class="post2">
-    <form [formGroup]="courseForm" (ngSubmit)="addCourse()">
-      <div>
-       <u> <h2>Add Course</h2></u>
-        <label>Course ID:</label>
-        <input formControlName="courseId" />
-        <div *ngIf="courseForm.controls['courseId'].invalid && courseForm.controls['courseId'].touched">
-          <small *ngIf="courseForm.controls['courseId'].hasError('required')">Course ID is required</small>
+<div class="container">
+  <div class="container2">
+
+    <div class="form_div">
+      <form [formGroup]="courseForm" (ngSubmit)="addCourse()">
+        <div>
+         <u> <h2>Add Course</h2></u>
+          <label>Course ID:</label>
+          <input formControlName="courseId" />
+          <div *ngIf="courseForm.controls['courseId'].invalid && courseForm.controls['courseId'].touched">
+            <br><small *ngIf="courseForm.controls['courseId'].hasError('required')">Course ID is required</small>
+          </div>
         </div>
-      </div>
-    
-      <div>
-        <label>Course Title:</label>
-        <input formControlName="courseTitle" />
-        <div *ngIf="courseForm.controls['courseTitle'].invalid && courseForm.controls['courseTitle'].touched">
-          <small *ngIf="courseForm.controls['courseTitle'].hasError('required')">Course Title is required</small>
+      <br>
+        <div>
+          <label>Course Title:</label>
+          <input formControlName="courseTitle" />
+          <div *ngIf="courseForm.controls['courseTitle'].invalid && courseForm.controls['courseTitle'].touched">
+            <br>  <small *ngIf="courseForm.controls['courseTitle'].hasError('required')">Course Title is required</small>
+          </div>
         </div>
-      </div>
-    
-      <div>
-        <label>Course Author:</label>
-        <input formControlName="courseAuthor" />
-        <div *ngIf="courseForm.controls['courseAuthor'].invalid && courseForm.controls['courseAuthor'].touched">
-          <small *ngIf="courseForm.controls['courseAuthor'].hasError('required')">Course Author is required</small>
+        <br>
+        <div>
+          <label>Course Author:</label>
+          <input formControlName="courseAuthor" />
+          <div *ngIf="courseForm.controls['courseAuthor'].invalid && courseForm.controls['courseAuthor'].touched">
+              <small *ngIf="courseForm.controls['courseAuthor'].hasError('required')">Course Author is required</small>
+          </div>
         </div>
-      </div>
-    
-      <div>
-        <label>Course Duration:</label>
-        <input formControlName="courseDuration" />
-        <div *ngIf="courseForm.controls['courseDuration'].invalid && courseForm.controls['courseDuration'].touched">
-          <small *ngIf="courseForm.controls['courseDuration'].hasError('required')">Course Duration is required</small>
+        <br>
+        <div>
+          <label>Course Duration:</label>
+          <input formControlName="courseDuration" />
+          <div *ngIf="courseForm.controls['courseDuration'].invalid && courseForm.controls['courseDuration'].touched">
+            <small *ngIf="courseForm.controls['courseDuration'].hasError('required')">Course Duration is required</small>
+          </div>
         </div>
-      </div>
-    
-      <div>
-        <label>Course Level:</label>
-        <input formControlName="courseLevel" />
-        <div *ngIf="courseForm.controls['courseLevel'].invalid && courseForm.controls['courseLevel'].touched">
-          <small *ngIf="courseForm.controls['courseLevel'].hasError('required')">Course Level is required</small>
+        <br>
+        <div>
+          <label>Course Level:</label>
+          <input formControlName="courseLevel" />
+          <div *ngIf="courseForm.controls['courseLevel'].invalid && courseForm.controls['courseLevel'].touched">
+             <small *ngIf="courseForm.controls['courseLevel'].hasError('required')">Course Level is required</small>
+          </div>
         </div>
-      </div>
-    
-      <button type="submit" [disabled]="courseForm.invalid">Add Course</button>
-    </form>
+        <br>
+        <button type="submit" [disabled]="courseForm.invalid">Add Course</button>
+      </form>
+    </div>
     
   </div>
 </div>
