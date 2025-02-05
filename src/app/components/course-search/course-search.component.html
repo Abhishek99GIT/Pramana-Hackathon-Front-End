@@ -1,0 +1,27 @@
+
+<div class="search_div">
+  <div class="search_divetwo">
+    <u><h2>Search for a Course: </h2></u>
+<form [formGroup]="searchForm">
+    <input type="text" formControlName="searchTerm" placeholder="Search courses...">
+    <div *ngIf="searchForm.get('searchTerm')?.invalid && searchForm.get('searchTerm')?.touched">
+      Search term is required and should be at least 3 characters.
+    </div>
+    <button type="submit" (click)="searchCourses()">Search</button>
+  </form>
+
+  <div *ngIf="loading">Loading...</div>
+  <div *ngIf="error">{{ error }}</div>
+  <ul *ngIf="courses && courses.length > 0">
+    <li *ngFor="let course of courses">
+      <h3>{{ course.courseTitle }}</h3>
+      <p>{{ course.courseAuthor }}</p>
+      <p>{{ course.courseId }}</p>
+      <p>Duration: {{ course.courseDuration }}</p>
+      <p>Level: {{ course.courseLevel }}</p>
+    </li>
+  </ul>
+  <p *ngIf="courses && courses.length === 0 && !loading && !error">No courses found.</p>
+
+  </div>
+</div>

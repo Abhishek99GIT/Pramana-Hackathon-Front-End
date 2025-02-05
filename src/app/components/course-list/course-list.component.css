@@ -1,0 +1,29 @@
+.page-number {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 2px;
+  }
+  .page-number.active {
+    background-color: #007bff;
+    color: white;
+  }
+  .getonecomp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading{
+    text-align: center;
+  }
+  th{
+    padding: 4px;
+    margin: 5px;
+  }
+  td{
+    padding:4px;
+    margin:5px;
+  }
+  table{
+    border: 2px solid black;
+  }

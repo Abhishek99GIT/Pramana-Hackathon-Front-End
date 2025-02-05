@@ -1,0 +1,36 @@
+
+<div class="container">
+  <div class="container2">
+    <u><h2>Update A Course</h2></u>
+  
+    <!-- Search by Course ID -->
+    <form [formGroup]="courseForm" (ngSubmit)="searchCourse()">
+      <label for="courseId">Enter Course ID:</label>
+      <input id="courseId" formControlName="courseId" required>
+      <button type="submit">Search</button>
+    </form>
+  
+    <div *ngIf="foundCourse">
+      <h3>Edit Course Details</h3>
+      <div class="form_div">
+        <form [formGroup]="courseForm" (ngSubmit)="updateCourse()">
+          <label for="courseTitle">Title:</label>
+          <input id="courseTitle" formControlName="courseTitle" required>
+    
+          <label for="courseAuthor">Author:</label>
+          <input id="courseAuthor" formControlName="courseAuthor" required>
+    
+          <label for="courseDuration">Duration:</label>
+          <input id="courseDuration" formControlName="courseDuration" required>
+    
+          <label for="courseLevel">Level:</label>
+          <input id="courseLevel" formControlName="courseLevel" required>
+    
+          <button type="submit">Update Course</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+  

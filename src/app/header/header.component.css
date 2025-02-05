@@ -1,0 +1,26 @@
+header{
+    height: 12%;
+    background-color: #280003;
+    
+    align-items: center;
+    align-content: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+}
+div{
+    display: inline-block;
+    margin-left: 20px ;
+}
+span{
+    cursor: pointer;
+    display: inline;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color:white;
+    /* margin-right:30px ; */
+}
