@@ -10,7 +10,7 @@ import { HeaderComponent } from "./header/header.component";
 
 @Component({
   selector: 'app-root',
-  imports: [ HeaderComponent, CourseSearchComponent, CourseListComponent, CourseFormComponent, CourseUpdateComponent],
+  imports: [ HeaderComponent, CourseSearchComponent, CourseListComponent, CourseFormComponent, CourseUpdateComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
